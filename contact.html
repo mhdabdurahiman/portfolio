@@ -51,20 +51,20 @@
                                 <form id="submit-form" action="https://script.google.com/macros/s/AKfycbxWFjFd9husenlTWufnL0nDciuZVnQv8IjbdhL0Xv-5yij3FqNMifCdhx42Wo7aoeWuwA/exec">
                                     <!-- Name input-->
                                     <div class="form-floating mb-3">
-                                        <input class="form-control" id="name" name="name" type="text"  placeholder="Enter your name..." required pattern="[A-Za-z]+" />
+                                        <input class="form-control" id="name" name="name" type="text"  placeholder="Enter your name..." required pattern="^[A-Za-z ]+$" />
                                         <label for="name">Full name</label>
                                         <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
                                     </div>
                                     <!-- Email address input-->
                                     <div class="form-floating mb-3">
-                                        <input class="form-control" id="email" name="email" type="email" placeholder="name@example.com" required pattern="[A-Za-z0-9]*[@](gmail)*[\.](com)$" />
+                                        <input class="form-control" id="email" name="email" type="email" placeholder="name@example.com" required pattern="(\w\.?)+@[\w\.-]+\.\w{2,4}" />
                                         <label for="email">Email address</label>
                                         <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
                                         <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
                                     </div>
                                     <!-- Phone number input-->
                                     <div class="form-floating mb-3">
-                                        <input class="form-control" id="phone" name="phone" type="tel" placeholder="(123) 456-7890" required pattern="[0-9]" />
+                                        <input class="form-control" id="phone" name="phone" type="tel" placeholder="(123) 456-7890" required pattern="[0-9]{10}" />
                                         <label for="phone">Phone number</label>
                                         <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
                                     </div>
